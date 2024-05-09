@@ -149,9 +149,9 @@
           "Where can I find more about the developer?"
         ],
         "responses": [
-          "You can find more about the developer on their website: [Developer's Website URL].",
-          "For more information about the developer, visit their website: [Developer's Website URL].",
-          "The developer's website is [Developer's Website URL]. You can find more information there."
+          "You can find more about the developer on their website: https://jomar-berdejo.vercel.app",
+          "For more information about the developer, visit their website: https://jomar-berdejo.vercel.app",
+          "The developer's website is https://jomar-berdejo.vercel.app. You can find more information there."
         ]
       },
       {
