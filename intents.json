@@ -1,84 +1,171 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
-      ]
-    }
-  ]
-}
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey there! Welcome to JavaScript Quickstart.",
+          "Hello! How can I assist you with JavaScript today?",
+          "Hi there! How can I help you with JavaScript?",
+          "Hi! Welcome to JavaScript Quickstart. How can I assist you with JavaScript?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "Goodbye! Feel free to return anytime for more JavaScript help.",
+          "See you later! Have a great day with your JavaScript projects.",
+          "Bye! Have a wonderful day exploring JavaScript."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["You're welcome! Happy coding!", "Glad I could help! Keep coding!", "Anytime! Keep rocking JavaScript!"]
+      },
+      {
+        "tag": "resources",
+        "patterns": [
+          "Where can I find JavaScript resources?",
+          "Do you have any JavaScript tutorials?",
+          "Can you recommend JavaScript books?"
+        ],
+        "responses": [
+          "Sure! You can find great JavaScript tutorials on MDN Web Docs and freeCodeCamp.",
+          "Absolutely! Check out 'Eloquent JavaScript' and 'JavaScript: The Good Parts' for some excellent reads.",
+          "Yes! FreeCodeCamp and Codecademy offer fantastic JavaScript resources for beginners and advanced learners alike. Also, don't forget to visit our web version of the app for more resources: https://javascript-quickstart.vercel.app"
+        ]
+      },      
+      {
+        "tag": "frameworks",
+        "patterns": [
+          "What JavaScript frameworks do you recommend?",
+          "Which JavaScript framework is the best?",
+          "Should I learn React or Angular?"
+        ],
+        "responses": [
+          "Popular JavaScript frameworks include React, Angular, and Vue.js. It depends on your project's needs and your personal preference.",
+          "There's no one-size-fits-all answer. React is great for component-based UIs, Angular for large-scale apps, and Vue.js for simplicity and ease of learning."
+        ]
+      },
+      {
+        "tag": "basics",
+        "patterns": [
+          "What is JavaScript?",
+          "Can you explain JavaScript?",
+          "Tell me about JavaScript basics."
+        ],
+        "responses": [
+          "JavaScript is a versatile programming language primarily used for enhancing web pages. It enables interactive elements, dynamic content, and much more on websites.",
+          "JavaScript is a scripting language commonly used for creating interactive web pages. It's versatile, allowing developers to add functionality, validate forms, create animations, and more.",
+          "JavaScript is a programming language that enables developers to add interactivity, validate forms, create animations, and manipulate content on web pages. It's essential for modern web development."
+        ]
+      },
+      {
+        "tag": "variables",
+        "patterns": [
+          "What are JavaScript variables?",
+          "Can you explain JavaScript variables?",
+          "How do JavaScript variables work?"
+        ],
+        "responses": [
+          "In JavaScript, variables are containers for storing data values. You declare variables with the 'var', 'let', or 'const' keywords.",
+          "JavaScript variables are used to store data values. They can hold various types of data such as numbers, strings, and objects. Variables are declared using 'var', 'let', or 'const'."
+        ]
+      },
+      {
+        "tag": "functions",
+        "patterns": [
+          "What are JavaScript functions?",
+          "Can you explain JavaScript functions?",
+          "How do JavaScript functions work?"
+        ],
+        "responses": [
+          "JavaScript functions are blocks of reusable code that perform a specific task. They are defined using the 'function' keyword and can accept parameters.",
+          "Functions in JavaScript are blocks of code designed to perform a specific task. They can be called multiple times, making code more modular and easier to maintain."
+        ]
+      },
+      {
+        "tag": "syntax",
+        "patterns": [
+          "What is JavaScript syntax?",
+          "Can you explain JavaScript syntax?",
+          "How does JavaScript syntax work?"
+        ],
+        "responses": [
+          "JavaScript syntax refers to the set of rules that define how JavaScript programs are written and interpreted. It includes rules for declaring variables, writing functions, and structuring code.",
+          "JavaScript syntax encompasses the rules for writing code in the JavaScript language. It includes guidelines for declaring variables, writing functions, and organizing code blocks."
+        ]
+      },
+      {
+        "tag": "control_flow",
+        "patterns": [
+          "What is JavaScript control flow?",
+          "Can you explain JavaScript control flow?",
+          "How does JavaScript control flow work?"
+        ],
+        "responses": [
+          "JavaScript control flow refers to the order in which statements are executed in a script. It includes decision-making statements like 'if', 'else', and loops like 'for' and 'while'.",
+          "Control flow in JavaScript determines the sequence in which statements are executed. It includes conditional statements ('if', 'else') and loops ('for', 'while') to control the flow of execution."
+        ]
+      },
+      {
+        "tag": "developer",
+        "patterns": [
+          "Who developed this app?",
+          "Who is the developer of this app?",
+          "Who created this app?"
+        ],
+        "responses": [
+          "This app was developed by Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC.",
+          "The developer of this app is Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC.",
+          "This app was created by Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC."
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "What payment methods do you accept?",
+          "Do you accept credit cards?",
+          "Can I pay with Paypal?"
+        ],
+        "responses": [
+          "Currently, we only accept payments through Paypal. You can pay or make donation in the about page."
+        ]
+      },      
+      {
+        "tag": "website",
+        "patterns": [
+          "What is the developer's website?",
+          "Can you provide the developer's website link?",
+          "Where can I find more about the developer?"
+        ],
+        "responses": [
+          "You can find more about the developer on their website: [Developer's Website URL].",
+          "For more information about the developer, visit their website: [Developer's Website URL].",
+          "The developer's website is [Developer's Website URL]. You can find more information there."
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a JavaScript joke!",
+          "Tell me something funny about JavaScript!",
+          "Do you know any JavaScript jokes?"
+        ],
+        "responses": [
+          "Why did the JavaScript function never return? It had its 'return' statement after the 'return' trip.",
+          "Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings."
+        ]
+      }
+    ]
+  }
+  
