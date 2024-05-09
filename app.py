@@ -10,7 +10,7 @@ def index_get():
     # return render_template("base.html")
     return jsonify({"message": "Hello"})
 
-@app.post("/predict")
+@app.post("/predict")   
 def predict():
     text = request.get_json().get("message")
     response = get_response(text)
