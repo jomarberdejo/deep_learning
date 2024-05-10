@@ -52,7 +52,7 @@
             let userMessage = { name: "User", message: text };
             this.messages.push(userMessage);
 
-            fetch('http://127.0.0.1:5000/predict', {
+            fetch('https://deep-learning-bqwr.onrender.com/predict', {
                 method: 'POST',
                 body: JSON.stringify({ message: text }),
                 mode: 'cors',
