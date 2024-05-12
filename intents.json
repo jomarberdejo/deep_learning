@@ -52,6 +52,27 @@
       "responses": ["You're welcome! Happy coding!", "Glad I could help! Keep coding!", "Anytime! Keep rocking JavaScript!"]
     },
     {
+      "tag": "okay_response",
+      "patterns": [
+        "Okay",
+        "Alright",
+        "Got it",
+        "Understood",
+        "Sure",
+        "yeah",
+        "Yes",
+        "Yeah",
+        "Yep",
+        "Yup"
+        
+      ],
+      "responses": [
+        "Great! If you have any more questions, feel free to ask.",
+        "Excellent! Let me know if there's anything else I can assist you with.",
+        "Perfect! Don't hesitate to reach out if you need further clarification."
+      ]
+    },
+    {
       "tag": "resources",
       "patterns": [
         "Where can I find JavaScript resources?",
