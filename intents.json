@@ -302,20 +302,20 @@
       ]
     },    
     {
-      "tag": "installation",
+      "tag": "setup",
       "patterns": [
-        "How do I install JavaScript Quickstart?",
-        "What's the installation process for JavaScript Quickstart?",
-        "Can you guide me through the installation of JavaScript Quickstart?",
-        "Do you have installation instructions?",
-        "Where can I download JavaScript Quickstart?"
+        "How do I set up JavaScript Quickstart?",
+        "What's the setup process for JavaScript Quickstart?",
+        "Can you guide me through setting up JavaScript Quickstart?",
+        "Do you have setup instructions for JavaScript Quickstart?",
+        "Where can I get started with JavaScript Quickstart?"
       ],
       "responses": [
-        "Installing JavaScript Quickstart is straightforward. Simply download the package from our website and follow the installation instructions provided in the README file.",
-        "To install JavaScript Quickstart, visit our website and download the installation package. Follow the instructions in the README file for installation.",
-        "You can install JavaScript Quickstart by downloading the package from our website and following the step-by-step installation guide in the README file."
+        "Setting up JavaScript Quickstart is straightforward. Ensure you have a code editor like Visual Studio Code or any other preferred editor. Then, follow the tutorials provided within the app or its web version to get started.",
+        "To set up JavaScript Quickstart, make sure you have a code editor installed. Then, refer to the tutorials available within the app or its web version for detailed setup instructions and getting started.",
+        "You can get started with JavaScript Quickstart by having a code editor installed on your system. Follow the tutorials provided within the app or its web version for step-by-step setup instructions."
       ]
-    },
+    },    
     {
       "tag": "updates",
       "patterns": [
@@ -400,21 +400,7 @@
         "Simple JavaScript code involves declaring variables, performing arithmetic operations, using conditional statements like 'if' and 'else', and defining functions to perform specific tasks."
       ]
     },
-    {
-      "tag": "code_example",
-      "patterns": [
-        "Can you give example of JavaScript code?",
-        "Provide me a simple JavaScript code snippet.",
-        "Do you have a basic JavaScript code example?",
-        "Give me a JavaScript code sample.",
-        "I want to see some JavaScript code in action."
-      ],
-      "responses": [
-        "Sure, here's a simple JavaScript code snippet:\n\n```javascript\n// Define a variable\nvar greeting = 'Hello, world!';\n\n// Print the greeting\nconsole.log(greeting);\n```",
-        "Here's a basic JavaScript code example:\n\n```javascript\n// Declare a variable\nvar name = 'John';\n\n// Display a message\nalert('Hello, ' + name + '!');\n```",
-        "Below is a simple JavaScript code sample:\n\n```javascript\n// Calculate the sum of two numbers\nfunction add(a, b) {\n  return a + b;\n}\n\n// Call the function\nvar result = add(3, 5);\nconsole.log(result); // Output: 8\n```"
-      ]
-    },
+   
     {
       "tag": "favorite_framework",
       "patterns": [
