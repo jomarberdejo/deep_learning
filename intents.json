@@ -64,7 +64,6 @@
         "Yeah",
         "Yep",
         "Yup"
-        
       ],
       "responses": [
         "Great! If you have any more questions, feel free to ask.",
@@ -246,9 +245,11 @@
         "Are there any payment gateways available?"
       ],
       "responses": [
-        "Currently, we only accept payments through Paypal. You can pay or make donations on the About page."
+        "Currently, we only accept payments through Paypal. You can pay or make donations on the About page.",
+        "At this time, Paypal is the only payment method available. You can complete your payment or donation on our About page.",
+        "For all transactions, Paypal is the accepted payment gateway. You'll find the payment option on our About page."
       ]
-    },
+    },    
     {
       "tag": "website",
       "patterns": [
@@ -304,18 +305,30 @@
     {
       "tag": "setup",
       "patterns": [
-        "How do I set up JavaScript Quickstart?",
-        "What's the setup process for JavaScript Quickstart?",
-        "Can you guide me through setting up JavaScript Quickstart?",
-        "Do you have setup instructions for JavaScript Quickstart?",
-        "Where can I get started with JavaScript Quickstart?"
+        "How do I set up JavaScript for web development?",
+        "What tools do I need to set up JavaScript?",
+        "Can you help me set up my JavaScript environment?",
+        "I'm new to JavaScript. How do I get started?",
+        "Where should I begin with JavaScript setup?",
+        "What steps are involved in setting up JavaScript?",
+        "How can I configure my environment for JavaScript development?",
+        "What are the prerequisites for setting up JavaScript?",
+        "Do you have a beginner's guide to setting up JavaScript?",
+        "How do I install JavaScript on my computer?"
       ],
       "responses": [
-        "Setting up JavaScript Quickstart is straightforward. Ensure you have a code editor like Visual Studio Code or any other preferred editor. Then, follow the tutorials provided within the app or its web version to get started.",
-        "To set up JavaScript Quickstart, make sure you have a code editor installed. Then, refer to the tutorials available within the app or its web version for detailed setup instructions and getting started.",
-        "You can get started with JavaScript Quickstart by having a code editor installed on your system. Follow the tutorials provided within the app or its web version for step-by-step setup instructions."
+        "Setting up a JavaScript development environment is essential for web development. You'll need a code editor like Visual Studio Code, a web browser for testing, and Node.js for running JavaScript outside of the browser. Follow our step-by-step guide within the app or its web version to get started.",
+        "To set up JavaScript for web development, you'll need a code editor such as Visual Studio Code or Atom, a web browser like Google Chrome or Mozilla Firefox, and Node.js for running JavaScript on your machine. Check out our tutorials within the app or its web version for detailed setup instructions.",
+        "Setting up your JavaScript environment involves installing a code editor, configuring your browser, and setting up Node.js for server-side JavaScript development. Our tutorials within the app or its web version provide detailed instructions to help you through the process.",
+        "If you're new to JavaScript, getting started is easy! Install a code editor, set up a local server environment with Node.js, and start coding. Our tutorials within the app or its web version will guide you through each step of the setup process.",
+        "To begin with JavaScript setup, make sure you have a code editor installed on your computer. Then, follow our comprehensive tutorials within the app or its web version for detailed instructions on setting up your development environment.",
+        "The setup process for JavaScript involves installing a code editor, configuring your development environment, and setting up any necessary tools like Node.js and package managers. Our tutorials within the app or its web version will walk you through each step.",
+        "Configuring your environment for JavaScript development typically includes installing a code editor, setting up version control with Git, and installing Node.js for server-side development. Explore our tutorials within the app or its web version for detailed setup instructions.",
+        "Before setting up JavaScript, ensure you have a code editor installed on your system. Then, follow our beginner-friendly tutorials within the app or its web version to install additional tools like Node.js and configure your environment for development.",
+        "New to JavaScript? No problem! Our beginner's guide will walk you through the setup process step by step. Install a code editor, set up a local development server, and start coding with our tutorials within the app or its web version.",
+        "To install JavaScript on your computer, you'll need a code editor, a web browser, and Node.js for server-side development. Follow our setup guide within the app or its web version for detailed instructions on getting started."
       ]
-    },    
+    },     
     {
       "tag": "updates",
       "patterns": [
@@ -372,63 +385,94 @@
         "Is there a web version of JavaScript Quickstart?",
         "Can I access JavaScript Quickstart on the web?",
         "Do you have a website for JavaScript Quickstart?",
-        "Where can I find the web version of JavaScript Quickstart?",
-        "I prefer using web apps. Is JavaScript Quickstart available online?",
-        "Can I access JavaScript Quickstart through a browser?",
-        "I want to use JavaScript Quickstart on my computer. How can I do that?"
+        "Is JavaScript Quickstart available online?",
+        "Where can I find JavaScript Quickstart on the internet?",
+        "I prefer using web applications. Is there a browser-based version of JavaScript Quickstart?"
       ],
       "responses": [
-        "Yes, there is a web version of JavaScript Quickstart available. Just click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app.",
-        "JavaScript Quickstart has a web version that you can access for additional features and resources. Simply click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app.",
-        "You can find the web version of JavaScript Quickstart on our website. Just click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app."
+        "Yes, JavaScript Quickstart is available as a web application. You can access it online at https://javascript-quickstart.vercel.app",
+        "JavaScript Quickstart has a web version that you can access online. Visit https://javascript-quickstart.vercel.app to explore it.",
+        "You can find JavaScript Quickstart on the web at https://javascript-quickstart.vercel.app. It offers the same features and resources as the mobile app."
       ]
     },
     {
-      "tag": "code_basics",
+      "tag": "features",
       "patterns": [
-        "What are the basics of JavaScript code?",
-        "Can you explain the fundamentals of JavaScript programming?",
-        "Tell me about simple JavaScript code.",
-        "What are some basic JavaScript concepts?",
-        "Explain JavaScript syntax",
-        "How do I write JavaScript code?",
-        "What should I know as a beginner in JavaScript programming?"
+        "What features does JavaScript Quickstart offer?",
+        "Can you tell me about the features of JavaScript Quickstart?",
+        "What functionalities are available in JavaScript Quickstart?",
+        "Does JavaScript Quickstart have any special features?",
+        "How is JavaScript Quickstart different from other learning platforms?",
+        "I'm interested in the capabilities of JavaScript Quickstart"
       ],
       "responses": [
-        "Basic JavaScript code includes variables, loops, conditional statements, and functions. These are essential building blocks for writing JavaScript programs.",
-        "JavaScript basics cover concepts like variables, data types, operators, control structures (such as loops and conditionals), and functions. Understanding these fundamentals is crucial for writing JavaScript code.",
-        "Simple JavaScript code involves declaring variables, performing arithmetic operations, using conditional statements like 'if' and 'else', and defining functions to perform specific tasks."
-      ]
-    },
-   
-    {
-      "tag": "favorite_framework",
-      "patterns": [
-        "What's your favorite JavaScript framework?",
-        "Do you have a preference for JavaScript frameworks?",
-        "Which JavaScript framework do you like the most?",
-        "Tell me about your favorite JavaScript framework",
-        "As a bot, do you have a preferred JavaScript framework?"
-      ],
-      "responses": [
-        "As a bot, I don't have personal preferences, but I can provide information on popular JavaScript frameworks like React, Angular, and Vue.js."
+        "JavaScript Quickstart offers a wide range of features to support your learning journey, including tutorials, documentation, code samples, and interactive exercises. Explore the app to discover its full potential!",
+        "With JavaScript Quickstart, you have access to various features such as tutorials, documentation, code playgrounds, and community support. Our goal is to provide a comprehensive learning experience for JavaScript enthusiasts.",
+        "JavaScript Quickstart is packed with features designed to help you learn and master JavaScript, including interactive tutorials, documentation, code examples, and more. Dive in and explore the app to see how it can benefit you."
       ]
     },
     {
-      "tag": "advice",
+      "tag": "community",
       "patterns": [
-        "Can you give me some JavaScript advice?",
-        "I need advice on JavaScript",
-        "Do you have any tips for JavaScript coding?",
-        "What advice do you have for JavaScript developers?",
-        "Can you offer guidance on JavaScript best practices?"
+        "Is there a community around JavaScript Quickstart?",
+        "Do you have a forum or community for JavaScript Quickstart users?",
+        "Can I join a community of JavaScript Quickstart enthusiasts?",
+        "How can I connect with other JavaScript Quickstart users?",
+        "Is there a support group or forum for JavaScript Quickstart?",
+        "I want to engage with other developers using JavaScript Quickstart"
       ],
       "responses": [
-        "Sure! One piece of advice for JavaScript developers is to always write clean and readable code. This makes it easier for you and others to understand and maintain the codebase.",
-        "When writing JavaScript code, it's essential to keep performance in mind. Avoid unnecessary operations and optimize your code for better efficiency.",
-        "Remember to stay updated with the latest JavaScript features and best practices. JavaScript evolves rapidly, so continuous learning is crucial for staying ahead.",
-        "Don't hesitate to seek help from the vibrant JavaScript community. Whether it's forums, online communities, or developer meetups, there's always someone willing to offer assistance and advice."
+        "Yes, we have a community of JavaScript Quickstart users where you can connect, share knowledge, and seek help. Join our forum at the Community Resources Page to become a part of it!",
+        "JavaScript Quickstart has a vibrant community of developers who are passionate about JavaScript. You can join our forum at the Community Resources Page to connect with fellow learners and experts.",
+        "Connect with other JavaScript Quickstart users, ask questions, and share your knowledge in our community forum at the Community Resources Page. It's a great place to learn and grow together!"
       ]
-    }    
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "How can I provide feedback on JavaScript Quickstart?",
+        "Do you welcome feedback?",
+        "Can I share my thoughts about JavaScript Quickstart?",
+        "Is there a way to give feedback on JavaScript Quickstart?",
+        "I have some feedback about JavaScript Quickstart. Where should I send it?",
+        "I want to offer feedback on my experience with JavaScript Quickstart"
+      ],
+      "responses": [
+        "We value your feedback! Feel free to share your thoughts, suggestions, or any issues you encounter with JavaScript Quickstart. You can send us an email at berdejojomar@gmail.com or reach out through our website contact form.",
+        "Your feedback is important to us! Please don't hesitate to share your thoughts, suggestions, or concerns about JavaScript Quickstart. You can reach us via email at berdejojomar@gmail.com or through our website contact form.",
+        "We appreciate your feedback! Let us know your thoughts, suggestions, or any issues you encounter while using JavaScript Quickstart. You can contact us via email at berdejojomar@gmail.com or through our website contact form."
+      ]
+    },
+    {
+      "tag": "platforms",
+      "patterns": [
+        "On which platforms is JavaScript Quickstart available?",
+        "Is JavaScript Quickstart compatible with all devices?",
+        "Can I use JavaScript Quickstart on my smartphone?",
+        "Does JavaScript Quickstart support multiple platforms?",
+        "Can I access JavaScript Quickstart on my tablet?",
+        "I prefer using different devices. Is JavaScript Quickstart available on all platforms?"
+      ],
+      "responses": [
+        "JavaScript Quickstart is designed to be accessible across various platforms, including smartphones, tablets, and computers. You can use it on any device with internet access.",
+        "Yes, JavaScript Quickstart is compatible with multiple platforms, allowing you to access it from smartphones, tablets, and computers.",
+        "You can use JavaScript Quickstart on a wide range of devices, including smartphones, tablets, and computers. It's optimized for different screen sizes and platforms."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "Can you tell me about JavaScript Quickstart?",
+        "What is JavaScript Quickstart?",
+        "What does JavaScript Quickstart offer?",
+        "How does JavaScript Quickstart work?",
+        "I want to know more about JavaScript Quickstart"
+      ],
+      "responses": [
+        "JavaScript Quickstart is an interactive learning platform designed to help you master JavaScript. Whether you're a beginner or an experienced developer, you'll find tutorials, documentation, code samples, and more to enhance your skills.",
+        "JavaScript Quickstart is a comprehensive learning resource for JavaScript enthusiasts. It offers tutorials, documentation, code playgrounds, and a supportive community to help you learn and grow as a developer.",
+        "JavaScript Quickstart provides everything you need to learn and master JavaScript, including tutorials, documentation, code examples, and interactive exercises. It's designed to support your learning journey and help you become proficient in JavaScript."
+      ]
+    }
   ]
 }
