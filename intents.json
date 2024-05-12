@@ -6,7 +6,9 @@
         "Who are you?",
         "What's your name?",
         "Introduce yourself",
-        "Tell me about yourself"
+        "Tell me about yourself",
+        "What do you do?",
+        "Who created you?"
       ],
       "responses": [
         "Hi there! I'm JavaScript Quickstart Bot. I'm here to help you with all things JavaScript. Feel free to ask me anything!"
@@ -22,7 +24,11 @@
         "Hey there",
         "Hello there",
         "Howdy",
-        "What's up"
+        "What's up",
+        "Greetings",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
       ],
       "responses": [
         "Hey there! Welcome to JavaScript Quickstart. What brings you here today?",
@@ -33,7 +39,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later", "Take care"],
+      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later", "Take care", "Farewell", "Until next time"],
       "responses": [
         "Goodbye! Feel free to return anytime for more JavaScript help.",
         "See you later! Have a great day with your JavaScript projects.",
@@ -42,7 +48,7 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Appreciate it", "Thanks a bunch"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Appreciate it", "Thanks a bunch", "Thank you very much"],
       "responses": ["You're welcome! Happy coding!", "Glad I could help! Keep coding!", "Anytime! Keep rocking JavaScript!"]
     },
     {
@@ -52,7 +58,11 @@
         "Do you have any JavaScript tutorials?",
         "Can you recommend JavaScript books?",
         "Any good online JavaScript courses?",
-        "Where can I learn JavaScript online?"
+        "Where can I learn JavaScript online?",
+        "What are some good JavaScript learning resources?",
+        "Can you suggest resources to improve my JavaScript skills?",
+        "I want to learn JavaScript. Where should I start?",
+        "How can I become proficient in JavaScript?"
       ],
       "responses": [
         "Sure! You can find great JavaScript tutorials on MDN Web Docs and freeCodeCamp.",
@@ -67,7 +77,12 @@
         "Which JavaScript framework is the best?",
         "Should I learn React or Angular?",
         "What's the difference between React and Vue.js?",
-        "Can you compare Angular and Vue.js?"
+        "Can you compare Angular and Vue.js?",
+        "I'm confused about choosing a JavaScript framework. Can you help?",
+        "What are some popular JavaScript frameworks?",
+        "Which JavaScript framework is trending?",
+        "I want to build a web app. Which JavaScript framework should I use?",
+        "Can you recommend a frontend framework for my project?"
       ],
       "responses": [
         "Popular JavaScript frameworks include React, Angular, and Vue.js. It depends on your project's needs and your personal preference.",
@@ -81,7 +96,11 @@
         "Can you explain JavaScript?",
         "Tell me about JavaScript basics.",
         "What are the fundamental concepts of JavaScript?",
-        "What are the building blocks of JavaScript?"
+        "What are the building blocks of JavaScript?",
+        "I'm new to programming. What is JavaScript?",
+        "Why is JavaScript important?",
+        "What can I do with JavaScript?",
+        "How does JavaScript fit into web development?"
       ],
       "responses": [
         "JavaScript is a versatile programming language primarily used for enhancing web pages. It enables interactive elements, dynamic content, and much more on websites.",
@@ -96,7 +115,10 @@
         "Can you explain JavaScript variables?",
         "How do JavaScript variables work?",
         "What's the purpose of variables in JavaScript?",
-        "Why do we use variables in JavaScript?"
+        "Why do we use variables in JavaScript?",
+        "Give me an example of a JavaScript variable declaration",
+        "How do I declare a variable in JavaScript?",
+        "When should I use 'var', 'let', or 'const' in JavaScript?"
       ],
       "responses": [
         "In JavaScript, variables are containers for storing data values. You declare variables with the 'var', 'let', or 'const' keywords.",
@@ -104,13 +126,36 @@
       ]
     },
     {
+      "tag": "data_types",
+      "patterns": [
+        "What are JavaScript data types?",
+        "Can you explain JavaScript data types?",
+        "How do JavaScript data types work?",
+        "What are the different data types in JavaScript?",
+        "Can you list the data types supported by JavaScript?",
+        "I'm new to JavaScript. What data types should I know about?",
+        "Why are data types important in JavaScript?",
+        "How do I work with different data types in JavaScript?",
+        "Give me examples of primitive data types in JavaScript",
+        "What are composite data types in JavaScript?"
+      ],
+      "responses": [
+        "JavaScript supports several data types, including primitive and composite types. Primitive data types include numbers, strings, booleans, null, and undefined. Composite data types include objects and arrays.",
+        "In JavaScript, data types classify the types of values that can be stored and manipulated by the language. The primary data types are numbers, strings, booleans, null, and undefined, while objects and arrays are composite data types."
+      ]
+    },    
+    {
       "tag": "functions",
       "patterns": [
         "What are JavaScript functions?",
         "Can you explain JavaScript functions?",
         "How do JavaScript functions work?",
         "Why do we use functions in JavaScript?",
-        "What's the purpose of functions in JavaScript?"
+        "What's the purpose of functions in JavaScript?",
+        "How do I define a function in JavaScript?",
+        "What is a function declaration?",
+        "How do I call a function in JavaScript?",
+        "What are parameters and arguments in JavaScript functions?"
       ],
       "responses": [
         "JavaScript functions are blocks of reusable code that perform a specific task. They are defined using the 'function' keyword and can accept parameters.",
@@ -124,7 +169,10 @@
         "Can you explain JavaScript syntax?",
         "How does JavaScript syntax work?",
         "What are the rules of JavaScript syntax?",
-        "How do you write code in JavaScript?"
+        "How do you write code in JavaScript?",
+        "Give me examples of JavaScript syntax",
+        "What are some common syntax errors in JavaScript?",
+        "I'm struggling with JavaScript syntax. Can you help?"
       ],
       "responses": [
         "JavaScript syntax refers to the set of rules that define how JavaScript programs are written and interpreted. It includes rules for declaring variables, writing functions, and structuring code.",
@@ -138,7 +186,9 @@
         "Can you explain JavaScript control flow?",
         "How does JavaScript control flow work?",
         "How do conditional statements work in JavaScript?",
-        "What are loops in JavaScript?"
+        "What are loops in JavaScript?",
+        "Give me examples of control flow in JavaScript",
+        "I'm having trouble understanding control flow in JavaScript"
       ],
       "responses": [
         "JavaScript control flow refers to the order in which statements are executed in a script. It includes decision-making statements like 'if', 'else', and loops like 'for' and 'while'.",
@@ -152,7 +202,10 @@
         "Who is the developer of this app?",
         "Who created this app?",
         "Who built this application?",
-        "Who made this JavaScript Quickstart?"
+        "Who made this JavaScript Quickstart?",
+        "I'm curious about the developer of this app",
+        "Can you tell me about the creator of this app?",
+        "Who is behind this JavaScript Quickstart project?"
       ],
       "responses": [
         "This app was developed by Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC.",
@@ -167,7 +220,9 @@
         "Do you accept credit cards?",
         "Can I pay with Paypal?",
         "How can I make a payment?",
-        "What are the payment options?"
+        "What are the payment options?",
+        "I want to purchase something. How can I pay?",
+        "Are there any payment gateways available?"
       ],
       "responses": [
         "Currently, we only accept payments through Paypal. You can pay or make donations on the About page."
@@ -180,26 +235,193 @@
         "Can you provide the developer's website link?",
         "Where can I find more about the developer?",
         "Do you have a website?",
-        "How can I contact the developer?"
+        "How can I contact the developer?",
+        "Is there a website for this app?",
+        "I want to learn more about the developer. Where can I find information?",
+        "How can i reach out developer",
+        "How do I get in touch with the developer?"
       ],
       "responses": [
         "You can find more about the developer on their website: https://jomar-berdejo.vercel.app",
         "For more information about the developer, visit their website: https://jomar-berdejo.vercel.app",
         "The developer's website is https://jomar-berdejo.vercel.app. You can find more information there."
       ]
-    },
+    },    
     {
       "tag": "funny",
       "patterns": [
         "Tell me a JavaScript joke!",
         "Tell me something funny about JavaScript!",
         "Do you know any JavaScript jokes?",
-        "Got any jokes?"
+        "Got any jokes?",
+        "I could use a laugh. Share a JavaScript joke!",
+        "Make me laugh with a JavaScript-related joke"
       ],
       "responses": [
         "Why did the JavaScript function never return? It had its 'return' statement after the 'return' trip.",
         "Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings."
       ]
-    }
+    },
+    {
+      "tag": "documentation",
+      "patterns": [
+        "Where can I find the documentation for JavaScript Quickstart?",
+        "Do you have documentation?",
+        "Can you provide the link to the documentation?",
+        "How do I access the documentation?",
+        "Is there any documentation available?",
+        "Where can I learn more about JavaScript Quickstart?"
+      ],
+      "responses": [
+        "Yes, we have comprehensive documentation available for JavaScript Quickstart. You can access it at: https://javascript-quickstart.vercel.app",
+        "You can find the documentation for JavaScript Quickstart on our website: https://javascript-quickstart.vercel.app",
+        "The documentation for JavaScript Quickstart is available online. Visit this link to access it: https://javascript-quickstart.vercel.app",
+        "You can also explore resources like W3Schools (https://www.w3schools.com/js/) or MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/JavaScript) for additional learning materials.",
+        "For more information and resources, feel free to visit our web version at: https://javascript-quickstart.vercel.app"
+      ]
+    },    
+    {
+      "tag": "installation",
+      "patterns": [
+        "How do I install JavaScript Quickstart?",
+        "What's the installation process for JavaScript Quickstart?",
+        "Can you guide me through the installation of JavaScript Quickstart?",
+        "Do you have installation instructions?",
+        "Where can I download JavaScript Quickstart?"
+      ],
+      "responses": [
+        "Installing JavaScript Quickstart is straightforward. Simply download the package from our website and follow the installation instructions provided in the README file.",
+        "To install JavaScript Quickstart, visit our website and download the installation package. Follow the instructions in the README file for installation.",
+        "You can install JavaScript Quickstart by downloading the package from our website and following the step-by-step installation guide in the README file."
+      ]
+    },
+    {
+      "tag": "updates",
+      "patterns": [
+        "How often do you release updates?",
+        "Are there any updates available for JavaScript Quickstart?",
+        "Do you provide regular updates?",
+        "When was the last update released?",
+        "Can I get information about the latest updates?",
+        "Tell me about the update schedule for JavaScript Quickstart"
+      ],
+      "responses": [
+        "We strive to release updates regularly to enhance the functionality and performance of JavaScript Quickstart. You can check for updates on our website or follow us on social media for announcements.",
+        "Yes, we provide regular updates for JavaScript Quickstart to ensure that our users have the best experience. Stay tuned for announcements regarding updates.",
+        "You can expect regular updates for JavaScript Quickstart to improve its features and address any issues. Keep an eye on our website or social media channels for update announcements."
+      ]
+    },
+    {
+      "tag": "compatibility",
+      "patterns": [
+        "Is JavaScript Quickstart compatible with mobile devices?",
+        "Can I use JavaScript Quickstart on my smartphone?",
+        "Does JavaScript Quickstart support mobile platforms?",
+        "Is there a mobile version of JavaScript Quickstart?",
+        "I want to access JavaScript Quickstart on my mobile device. Is it possible?",
+        "Can I use JavaScript Quickstart on a tablet?",
+        "I prefer using my smartphone for learning. Is JavaScript Quickstart mobile-friendly?"
+      ],
+      "responses": [
+        "Yes, JavaScript Quickstart is designed to be compatible with mobile devices. You can access it on your smartphone or tablet without any issues.",
+        "JavaScript Quickstart fully supports mobile platforms, allowing you to use it on your smartphone or tablet for convenience.",
+        "You can use JavaScript Quickstart on your mobile device without any compatibility issues. It's optimized for mobile browsing."
+      ]
+    },
+    {
+      "tag": "goal",
+      "patterns": [
+        "What is the goal of JavaScript Quickstart?",
+        "Why was JavaScript Quickstart created?",
+        "What purpose does JavaScript Quickstart serve?",
+        "Can you tell me about the goal of this app?",
+        "What problem does JavaScript Quickstart solve?",
+        "How does JavaScript Quickstart benefit developers?",
+        "I'm curious about the motivation behind JavaScript Quickstart"
+      ],
+      "responses": [
+        "The goal of JavaScript Quickstart is to provide developers with a comprehensive resource for learning and mastering JavaScript. We aim to simplify the learning process and empower developers to build amazing web applications.",
+        "JavaScript Quickstart was created with the goal of offering developers a streamlined learning experience for JavaScript. Our aim is to provide easy access to resources and tutorials to help developers enhance their skills.",
+        "The primary purpose of JavaScript Quickstart is to serve as a learning platform for JavaScript enthusiasts. Whether you're a beginner or an experienced developer, our goal is to support you in your journey to mastering JavaScript."
+      ]
+    },
+    {
+      "tag": "web_version",
+      "patterns": [
+        "Is there a web version of JavaScript Quickstart?",
+        "Can I access JavaScript Quickstart on the web?",
+        "Do you have a website for JavaScript Quickstart?",
+        "Where can I find the web version of JavaScript Quickstart?",
+        "I prefer using web apps. Is JavaScript Quickstart available online?",
+        "Can I access JavaScript Quickstart through a browser?",
+        "I want to use JavaScript Quickstart on my computer. How can I do that?"
+      ],
+      "responses": [
+        "Yes, there is a web version of JavaScript Quickstart available. Just click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app.",
+        "JavaScript Quickstart has a web version that you can access for additional features and resources. Simply click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app.",
+        "You can find the web version of JavaScript Quickstart on our website. Just click the globe icon in the tab navigation below or visit our website version link https://javascript-quickstart.vercel.app."
+      ]
+    },
+    {
+      "tag": "code_basics",
+      "patterns": [
+        "What are the basics of JavaScript code?",
+        "Can you explain the fundamentals of JavaScript programming?",
+        "Tell me about simple JavaScript code.",
+        "What are some basic JavaScript concepts?",
+        "Explain JavaScript syntax",
+        "How do I write JavaScript code?",
+        "What should I know as a beginner in JavaScript programming?"
+      ],
+      "responses": [
+        "Basic JavaScript code includes variables, loops, conditional statements, and functions. These are essential building blocks for writing JavaScript programs.",
+        "JavaScript basics cover concepts like variables, data types, operators, control structures (such as loops and conditionals), and functions. Understanding these fundamentals is crucial for writing JavaScript code.",
+        "Simple JavaScript code involves declaring variables, performing arithmetic operations, using conditional statements like 'if' and 'else', and defining functions to perform specific tasks."
+      ]
+    },
+    {
+      "tag": "code_example",
+      "patterns": [
+        "Can you give example of JavaScript code?",
+        "Provide me a simple JavaScript code snippet.",
+        "Do you have a basic JavaScript code example?",
+        "Give me a JavaScript code sample.",
+        "I want to see some JavaScript code in action."
+      ],
+      "responses": [
+        "Sure, here's a simple JavaScript code snippet:\n\n```javascript\n// Define a variable\nvar greeting = 'Hello, world!';\n\n// Print the greeting\nconsole.log(greeting);\n```",
+        "Here's a basic JavaScript code example:\n\n```javascript\n// Declare a variable\nvar name = 'John';\n\n// Display a message\nalert('Hello, ' + name + '!');\n```",
+        "Below is a simple JavaScript code sample:\n\n```javascript\n// Calculate the sum of two numbers\nfunction add(a, b) {\n  return a + b;\n}\n\n// Call the function\nvar result = add(3, 5);\nconsole.log(result); // Output: 8\n```"
+      ]
+    },
+    {
+      "tag": "favorite_framework",
+      "patterns": [
+        "What's your favorite JavaScript framework?",
+        "Do you have a preference for JavaScript frameworks?",
+        "Which JavaScript framework do you like the most?",
+        "Tell me about your favorite JavaScript framework",
+        "As a bot, do you have a preferred JavaScript framework?"
+      ],
+      "responses": [
+        "As a bot, I don't have personal preferences, but I can provide information on popular JavaScript frameworks like React, Angular, and Vue.js."
+      ]
+    },
+    {
+      "tag": "advice",
+      "patterns": [
+        "Can you give me some JavaScript advice?",
+        "I need advice on JavaScript",
+        "Do you have any tips for JavaScript coding?",
+        "What advice do you have for JavaScript developers?",
+        "Can you offer guidance on JavaScript best practices?"
+      ],
+      "responses": [
+        "Sure! One piece of advice for JavaScript developers is to always write clean and readable code. This makes it easier for you and others to understand and maintain the codebase.",
+        "When writing JavaScript code, it's essential to keep performance in mind. Avoid unnecessary operations and optimize your code for better efficiency.",
+        "Remember to stay updated with the latest JavaScript features and best practices. JavaScript evolves rapidly, so continuous learning is crucial for staying ahead.",
+        "Don't hesitate to seek help from the vibrant JavaScript community. Whether it's forums, online communities, or developer meetups, there's always someone willing to offer assistance and advice."
+      ]
+    }    
   ]
 }
