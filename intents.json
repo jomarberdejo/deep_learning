@@ -363,22 +363,20 @@
       ]
     },
     {
-      "tag": "goal",
+      "tag": "how_to_use",
       "patterns": [
-        "What is the goal of JavaScript Quickstart?",
-        "Why was JavaScript Quickstart created?",
-        "What purpose does JavaScript Quickstart serve?",
-        "Can you tell me about the goal of this app?",
-        "What problem does JavaScript Quickstart solve?",
-        "How does JavaScript Quickstart benefit developers?",
-        "I'm curious about the motivation behind JavaScript Quickstart"
+        "How do I use this app?",
+        "What are the steps to utilize this app?",
+        "Can you guide me on how to make the most of this app?",
+        "I'm new to this app, how do I get started?",
+        "What is the best way to navigate through this app?"
       ],
       "responses": [
-        "The goal of JavaScript Quickstart is to provide developers with a comprehensive resource for learning and mastering JavaScript. We aim to simplify the learning process and empower developers to build amazing web applications.",
-        "JavaScript Quickstart was created with the goal of offering developers a streamlined learning experience for JavaScript. Our aim is to provide easy access to resources and tutorials to help developers enhance their skills.",
-        "The primary purpose of JavaScript Quickstart is to serve as a learning platform for JavaScript enthusiasts. Whether you're a beginner or an experienced developer, our goal is to support you in your journey to mastering JavaScript."
+        "To make the most of this app, start by exploring the various features and functionalities available. You can begin by creating an account or logging in if you already have one. Then, familiarize yourself with the interface and navigation options. Don't hesitate to explore different sections and settings to customize your experience.",
+        "Using this app is easy! Begin by signing up or logging in to your account. Once logged in, you can explore the different sections and features available. Take your time to understand how each feature works and how it can benefit you. Remember, if you have any questions or need assistance, you can always refer and ask questions to me or contact the developer.",
+        "Getting started with this app is simple! Just sign up or log in to access the various features and resources available. Whether you're looking for tutorials, exercises or quizzes, this app has something for everyone. Feel free to explore within the app and dont forget to give feedaback on the web version of this app in the form section."
       ]
-    },
+    },    
     {
       "tag": "web_version",
       "patterns": [
