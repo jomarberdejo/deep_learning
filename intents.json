@@ -3,17 +3,24 @@
     {
       "tag": "introduction",
       "patterns": [
-        "Who are you?",
-        "What's your name?",
-        "Introduce yourself",
-        "Tell me about yourself",
-        "What do you do?",
-        "Who created you?"
+      "Who are you?",
+      "What's your name?",
+      "Introduce yourself",
+      "Tell me about yourself",
+      "What do you do?",
+      "Who created you?"
       ],
       "responses": [
-        "Hi there! I'm JavaScript Quickstart Bot. I'm here to help you with all things JavaScript. Feel free to ask me anything!"
+      "Hi there! I'm JavaScript Quickstart Bot. I'm here to help you with all things JavaScript. Feel free to ask me anything!",
+      "Hey! I'm the JavaScript Quickstart Bot. My purpose is to assist you with JavaScript-related queries.",
+      "Greetings! I go by the name JavaScript Quickstart Bot. I'm designed to be your go-to resource for JavaScript assistance.",
+      "Hello! I'm your JavaScript Quickstart Bot. My main function is to provide support and guidance on JavaScript topics.",
+      "Nice to meet you! I'm the JavaScript Quickstart Bot, ready to tackle your JavaScript questions whenever you need.",
+      "I'm the JavaScript Quickstart Bot, your friendly neighborhood JavaScript assistant. How can I assist you today?",
+      "Hey there! I'm the JavaScript Quickstart Bot, here to lend a hand with anything JavaScript-related."
       ]
-    },
+      },
+
     {
       "tag": "greeting",
       "patterns": [
@@ -72,6 +79,19 @@
       ]
     },
     {
+      "tag": "developer_contact",
+      "patterns": [
+        "How can I contact the developer?",
+        "Is there a way to reach out to the developer?",
+        "I want to talk to the developer",
+        "Can I get in touch with the developer?",
+        "How do I contact the developer?"
+      ],
+      "responses": [
+        "You can contact the developer via email at berdejojomar@gmail.com or through their website contact form."
+      ]
+    },    
+    {
       "tag": "resources",
       "patterns": [
         "Where can I find JavaScript resources?",
@@ -88,6 +108,24 @@
         "Sure! You can find great JavaScript tutorials on MDN Web Docs and freeCodeCamp.",
         "Absolutely! Check out 'Eloquent JavaScript' and 'JavaScript: The Good Parts' for some excellent reads.",
         "Yes! FreeCodeCamp and Codecademy offer fantastic JavaScript resources for beginners and advanced learners alike. Also, don't forget to visit our web version of the app for more resources: https://javascript-quickstart.vercel.app"
+      ]
+    },
+    {
+      "tag": "paid_tutorials",
+      "patterns": [
+        "Do you offer paid tutorials?",
+        "Are there any paid tutorial options?",
+        "Can I get personal tutorials for a fee?",
+        "Do you provide one-on-one tutoring?",
+        "I'm interested in paid tutorials. How does it work?",
+        "Are there any premium tutorial options available?"
+      ],
+      "responses": [
+        "Yes, we offer personalized paid tutorials tailored to your specific needs. Whether you prefer face-to-face or online sessions, our experienced developers are here to assist you.",
+        "Absolutely! We provide paid tutorial sessions conducted by our experienced developers. These sessions can be customized to focus on your learning goals and are available both face-to-face and online.",
+        "Yes, we offer paid tutorial services with our skilled developers. Whether you prefer in-person sessions or online tutorials, we can accommodate your learning preferences.",
+        "Certainly! Our paid tutorial option allows you to receive personalized guidance from our developers, either in person or online. Contact us via email or Facebook to discuss further details and pricing.",
+        "We do offer paid tutorials conducted by our knowledgeable developers. These sessions can be arranged either face-to-face or online, depending on your preference. For more information and pricing details, please reach out to us via email or Facebook."
       ]
     },
     {
