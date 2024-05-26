@@ -167,6 +167,37 @@
       ]
     },
     {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "I need help",
+        "Can you help me?",
+        "I'm stuck",
+        "I have a question",
+        "Assistance needed",
+        "Help me out",
+        "Can you assist me?",
+        "I'm having trouble",
+        "I don't understand",
+        "Please help",
+        "I'm confused"
+      ],
+      "responses": [
+        "Of course! What do you need help with?",
+        "Sure, I'm here to help. What's the problem?",
+        "No problem, I'm here to assist you. What do you need?",
+        "Don't worry, I'm here to help you out. What's the issue?",
+        "I'm here to assist you. What can I do for you?",
+        "Absolutely, I'm ready to help. What's the matter?",
+        "I'm here to provide assistance. What do you need help with?",
+        "Sure thing! Let me know what you're struggling with.",
+        "I'm here to help you. What's troubling you?",
+        "No worries, I'll do my best to assist you. What's the question?",
+        "I'm here to lend a hand. What do you need assistance with?",
+        "I'm here to assist you. Feel free to ask me anything!"
+      ]
+    },    
+    {
       "tag": "variables",
       "patterns": [
         "What are JavaScript variables?",
