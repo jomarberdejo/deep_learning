@@ -1,568 +1,101 @@
 {
-  "intents": [
-    {
-      "tag": "introduction",
-      "patterns": [
-      "Who are you?",
-      "What's your name?",
-      "Introduce yourself",
-      "Tell me about yourself",
-      "What do you do?",
-      "Who created you?"
-      ],
-      "responses": [
-      "Hi there! I'm JavaScript Quickstart Bot. I'm here to help you with all things JavaScript. Feel free to ask me anything!",
-      "Hey! I'm the JavaScript Quickstart Bot. My purpose is to assist you with JavaScript-related queries.",
-      "Greetings! I go by the name JavaScript Quickstart Bot. I'm designed to be your go-to resource for JavaScript assistance.",
-      "Hello! I'm your JavaScript Quickstart Bot. My main function is to provide support and guidance on JavaScript topics.",
-      "Nice to meet you! I'm the JavaScript Quickstart Bot, ready to tackle your JavaScript questions whenever you need.",
-      "I'm the JavaScript Quickstart Bot, your friendly neighborhood JavaScript assistant. How can I assist you today?",
-      "Hey there! I'm the JavaScript Quickstart Bot, here to lend a hand with anything JavaScript-related."
-      ]
+    "intents": [
+        {
+            "tag": "who_are_you",
+            "patterns": ["who are you", "what are you", "tell me about yourself"],
+            "responses": ["I'm a virtual assistant designed to help you with queries related to the ANDAM app. Feel free to ask me anything!"]
+          },          
+      {
+        "tag": "welcome",
+        "patterns": ["hi", "hello", "hey", "howdy", "greetings", "welcome"],
+        "responses": ["Hello! Welcome to our app."]
       },
-
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "Hello",
-        "Good day",
-        "Hey there",
-        "Hello there",
-        "Howdy",
-        "What's up",
-        "Greetings",
-        "Good morning",
-        "Good afternoon",
-        "Good evening"
-      ],
-      "responses": [
-        "Hey there! Welcome to JavaScript Quickstart. What brings you here today?",
-        "Hello! How can I assist you with JavaScript today?",
-        "Hi there! How can I help you with JavaScript?",
-        "Hi! Welcome to JavaScript Quickstart. How can I assist you with JavaScript?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later", "Take care", "Farewell", "Until next time"],
-      "responses": [
-        "Goodbye! Feel free to return anytime for more JavaScript help.",
-        "See you later! Have a great day with your JavaScript projects.",
-        "Bye! Have a wonderful day exploring JavaScript."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Appreciate it", "Thanks a bunch", "Thank you very much"],
-      "responses": ["You're welcome! Happy coding!", "Glad I could help! Keep coding!", "Anytime! Keep rocking JavaScript!"]
-    },
-    {
-      "tag": "okay_response",
-      "patterns": [
-        "Okay",
-        "Alright",
-        "Got it",
-        "Understood",
-        "Sure",
-        "yeah",
-        "Yes",
-        "Yeah",
-        "Yep",
-        "Yup"
-      ],
-      "responses": [
-        "Great! If you have any more questions, feel free to ask.",
-        "Excellent! Let me know if there's anything else I can assist you with.",
-        "Perfect! Don't hesitate to reach out if you need further clarification."
-      ]
-    },
-    {
-      "tag": "developer_contact",
-      "patterns": [
-        "How can I contact the developer?",
-        "Is there a way to reach out to the developer?",
-        "I want to talk to the developer",
-        "Can I get in touch with the developer?",
-        "How do I contact the developer?"
-      ],
-      "responses": [
-        "You can contact the developer via email at berdejojomar@gmail.com or through their website contact form."
-      ]
-    },    
-    {
-      "tag": "resources",
-      "patterns": [
-        "Where can I find JavaScript resources?",
-        "Do you have any JavaScript tutorials?",
-        "Can you recommend JavaScript books?",
-        "Any good online JavaScript courses?",
-        "Where can I learn JavaScript online?",
-        "What are some good JavaScript learning resources?",
-        "Can you suggest resources to improve my JavaScript skills?",
-        "I want to learn JavaScript. Where should I start?",
-        "How can I become proficient in JavaScript?"
-      ],
-      "responses": [
-        "Sure! You can find great JavaScript tutorials on MDN Web Docs and freeCodeCamp.",
-        "Absolutely! Check out 'Eloquent JavaScript' and 'JavaScript: The Good Parts' for some excellent reads.",
-        "Yes! FreeCodeCamp and Codecademy offer fantastic JavaScript resources for beginners and advanced learners alike. Also, don't forget to visit our web version of the app for more resources: https://javascript-quickstart.vercel.app"
-      ]
-    },
-    {
-      "tag": "paid_tutorials",
-      "patterns": [
-        "Do you offer paid tutorials?",
-        "Are there any paid tutorial options?",
-        "Can I get personal tutorials for a fee?",
-        "Do you provide one-on-one tutoring?",
-        "I'm interested in paid tutorials. How does it work?",
-        "Are there any premium tutorial options available?"
-      ],
-      "responses": [
-        "Yes, we offer personalized paid tutorials tailored to your specific needs. Whether you prefer face-to-face or online sessions, our experienced developers are here to assist you.",
-        "Absolutely! We provide paid tutorial sessions conducted by our experienced developers. These sessions can be customized to focus on your learning goals and are available both face-to-face and online.",
-        "Yes, we offer paid tutorial services with our skilled developers. Whether you prefer in-person sessions or online tutorials, we can accommodate your learning preferences.",
-        "Certainly! Our paid tutorial option allows you to receive personalized guidance from our developers, either in person or online. Contact us via email or Facebook to discuss further details and pricing.",
-        "We do offer paid tutorials conducted by our knowledgeable developers. These sessions can be arranged either face-to-face or online, depending on your preference. For more information and pricing details, please reach out to us via email or Facebook."
-      ]
-    },
-    {
-      "tag": "frameworks",
-      "patterns": [
-        "What JavaScript frameworks do you recommend?",
-        "Which JavaScript framework is the best?",
-        "Should I learn React or Angular?",
-        "What's the difference between React and Vue.js?",
-        "Can you compare Angular and Vue.js?",
-        "I'm confused about choosing a JavaScript framework. Can you help?",
-        "What are some popular JavaScript frameworks?",
-        "Which JavaScript framework is trending?",
-        "I want to build a web app. Which JavaScript framework should I use?",
-        "Can you recommend a frontend framework for my project?"
-      ],
-      "responses": [
-        "Popular JavaScript frameworks include React, Angular, and Vue.js. It depends on your project's needs and your personal preference.",
-        "There's no one-size-fits-all answer. React is great for component-based UIs, Angular for large-scale apps, and Vue.js for simplicity and ease of learning."
-      ]
-    },
-    {
-      "tag": "basics",
-      "patterns": [
-        "What is JavaScript?",
-        "Can you explain JavaScript?",
-        "Tell me about JavaScript basics.",
-        "What are the fundamental concepts of JavaScript?",
-        "What are the building blocks of JavaScript?",
-        "I'm new to programming. What is JavaScript?",
-        "Why is JavaScript important?",
-        "What can I do with JavaScript?",
-        "How does JavaScript fit into web development?"
-      ],
-      "responses": [
-        "JavaScript is a versatile programming language primarily used for enhancing web pages. It enables interactive elements, dynamic content, and much more on websites.",
-        "JavaScript is a scripting language commonly used for creating interactive web pages. It's versatile, allowing developers to add functionality, validate forms, create animations, and more.",
-        "JavaScript is a programming language that enables developers to add interactivity, validate forms, create animations, and manipulate content on web pages. It's essential for modern web development."
-      ]
-    },
-    {
-      "tag": "help",
-      "patterns": [
-        "Help",
-        "I need help",
-        "Can you help me?",
-        "I'm stuck",
-        "I have a question",
-        "Assistance needed",
-        "Help me out",
-        "Can you assist me?",
-        "I'm having trouble",
-        "I don't understand",
-        "Please help",
-        "I'm confused"
-      ],
-      "responses": [
-        "Of course! What do you need help with?",
-        "Sure, I'm here to help. What's the problem?",
-        "No problem, I'm here to assist you. What do you need?",
-        "Don't worry, I'm here to help you out. What's the issue?",
-        "I'm here to assist you. What can I do for you?",
-        "Absolutely, I'm ready to help. What's the matter?",
-        "I'm here to provide assistance. What do you need help with?",
-        "Sure thing! Let me know what you're struggling with.",
-        "I'm here to help you. What's troubling you?",
-        "No worries, I'll do my best to assist you. What's the question?",
-        "I'm here to lend a hand. What do you need assistance with?",
-        "I'm here to assist you. Feel free to ask me anything!"
-      ]
-    },    
-    {
-      "tag": "variables",
-      "patterns": [
-        "What are JavaScript variables?",
-        "Can you explain JavaScript variables?",
-        "How do JavaScript variables work?",
-        "What's the purpose of variables in JavaScript?",
-        "Why do we use variables in JavaScript?",
-        "Give me an example of a JavaScript variable declaration",
-        "How do I declare a variable in JavaScript?",
-        "When should I use 'var', 'let', or 'const' in JavaScript?"
-      ],
-      "responses": [
-        "In JavaScript, variables are containers for storing data values. You declare variables with the 'var', 'let', or 'const' keywords.",
-        "JavaScript variables are used to store data values. They can hold various types of data such as numbers, strings, and objects. Variables are declared using 'var', 'let', or 'const'."
-      ]
-    },
-    {
-      "tag": "data_types",
-      "patterns": [
-        "What are JavaScript data types?",
-        "Can you explain JavaScript data types?",
-        "How do JavaScript data types work?",
-        "What are the different data types in JavaScript?",
-        "Can you list the data types supported by JavaScript?",
-        "I'm new to JavaScript. What data types should I know about?",
-        "Why are data types important in JavaScript?",
-        "How do I work with different data types in JavaScript?",
-        "Give me examples of primitive data types in JavaScript",
-        "What are composite data types in JavaScript?"
-      ],
-      "responses": [
-        "JavaScript supports several data types, including primitive and composite types. Primitive data types include numbers, strings, booleans, null, and undefined. Composite data types include objects and arrays.",
-        "In JavaScript, data types classify the types of values that can be stored and manipulated by the language. The primary data types are numbers, strings, booleans, null, and undefined, while objects and arrays are composite data types."
-      ]
-    },    
-    {
-      "tag": "functions",
-      "patterns": [
-        "What are JavaScript functions?",
-        "Can you explain JavaScript functions?",
-        "How do JavaScript functions work?",
-        "Why do we use functions in JavaScript?",
-        "What's the purpose of functions in JavaScript?",
-        "How do I define a function in JavaScript?",
-        "What is a function declaration?",
-        "How do I call a function in JavaScript?",
-        "What are parameters and arguments in JavaScript functions?"
-      ],
-      "responses": [
-        "JavaScript functions are blocks of reusable code that perform a specific task. They are defined using the 'function' keyword and can accept parameters.",
-        "Functions in JavaScript are blocks of code designed to perform a specific task. They can be called multiple times, making code more modular and easier to maintain."
-      ]
-    },
-    {
-      "tag": "syntax",
-      "patterns": [
-        "What is JavaScript syntax?",
-        "Can you explain JavaScript syntax?",
-        "How does JavaScript syntax work?",
-        "What are the rules of JavaScript syntax?",
-        "How do you write code in JavaScript?",
-        "Give me examples of JavaScript syntax",
-        "What are some common syntax errors in JavaScript?",
-        "I'm struggling with JavaScript syntax. Can you help?"
-      ],
-      "responses": [
-        "JavaScript syntax refers to the set of rules that define how JavaScript programs are written and interpreted. It includes rules for declaring variables, writing functions, and structuring code.",
-        "JavaScript syntax encompasses the rules for writing code in the JavaScript language. It includes guidelines for declaring variables, writing functions, and organizing code blocks."
-      ]
-    },
-    {
-      "tag": "control_flow",
-      "patterns": [
-        "What is JavaScript control flow?",
-        "Can you explain JavaScript control flow?",
-        "How does JavaScript control flow work?",
-        "How do conditional statements work in JavaScript?",
-        "What are loops in JavaScript?",
-        "Give me examples of control flow in JavaScript",
-        "I'm having trouble understanding control flow in JavaScript"
-      ],
-      "responses": [
-        "JavaScript control flow refers to the order in which statements are executed in a script. It includes decision-making statements like 'if', 'else', and loops like 'for' and 'while'.",
-        "Control flow in JavaScript determines the sequence in which statements are executed. It includes conditional statements ('if', 'else') and loops ('for', 'while') to control the flow of execution."
-      ]
-    },
-    {
-      "tag": "developer",
-      "patterns": [
-        "Who developed this app?",
-        "Who is the developer of this app?",
-        "Who created this app?",
-        "Who built this application?",
-        "Who made this JavaScript Quickstart?",
-        "I'm curious about the developer of this app",
-        "Can you tell me about the creator of this app?",
-        "Who is behind this JavaScript Quickstart project?"
-      ],
-      "responses": [
-        "This app was developed by Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC.",
-        "The developer of this app is Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC.",
-        "This app was created by Jomar M. Berdejo, a 3rd Year BSIT student at EVSU-CC."
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "What payment methods do you accept?",
-        "Do you accept credit cards?",
-        "Can I pay with Paypal?",
-        "How can I make a payment?",
-        "What are the payment options?",
-        "I want to purchase something. How can I pay?",
-        "Are there any payment gateways available?"
-      ],
-      "responses": [
-        "Currently, we only accept payments through Paypal. You can pay or make donations on the About page.",
-        "At this time, Paypal is the only payment method available. You can complete your payment or donation on our About page.",
-        "For all transactions, Paypal is the accepted payment gateway. You'll find the payment option on our About page."
-      ]
-    },    
-    {
-      "tag": "website",
-      "patterns": [
-        "What is the developer's website?",
-        "Can you provide the developer's website link?",
-        "Where can I find more about the developer?",
-        "Do you have a website?",
-        "How can I contact the developer?",
-        "Is there a website for this app?",
-        "I want to learn more about the developer. Where can I find information?",
-        "How can i reach out developer",
-        "How do I get in touch with the developer?"
-      ],
-      "responses": [
-        "You can find more about the developer on their website: https://jomar-berdejo.vercel.app",
-        "For more information about the developer, visit their website: https://jomar-berdejo.vercel.app",
-        "The developer's website is https://jomar-berdejo.vercel.app. You can find more information there."
-      ]
-    },    
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a JavaScript joke!",
-        "Tell me something funny about JavaScript!",
-        "Do you know any JavaScript jokes?",
-        "Got any jokes?",
-        "I could use a laugh. Share a JavaScript joke!",
-        "Make me laugh with a JavaScript-related joke"
-      ],
-      "responses": [
-        "Why did the JavaScript function never return? It had its 'return' statement after the 'return' trip.",
-        "Why was the JavaScript developer sad? Because he didn't know how to 'null' his feelings."
-      ]
-    },
-    {
-      "tag": "documentation",
-      "patterns": [
-        "Where can I find the documentation for JavaScript Quickstart?",
-        "Do you have documentation?",
-        "Can you provide the link to the documentation?",
-        "How do I access the documentation?",
-        "Is there any documentation available?",
-        "Where can I learn more about JavaScript Quickstart?"
-      ],
-      "responses": [
-        "Yes, we have comprehensive documentation available for JavaScript Quickstart. You can access it at: https://javascript-quickstart.vercel.app",
-        "You can find the documentation for JavaScript Quickstart on our website: https://javascript-quickstart.vercel.app",
-        "The documentation for JavaScript Quickstart is available online. Visit this link to access it: https://javascript-quickstart.vercel.app",
-        "You can also explore resources like W3Schools (https://www.w3schools.com/js/) or MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/JavaScript) for additional learning materials.",
-        "For more information and resources, feel free to visit our web version at: https://javascript-quickstart.vercel.app"
-      ]
-    },    
-    {
-      "tag": "setup",
-      "patterns": [
-        "How do I set up JavaScript for web development?",
-        "What tools do I need to set up JavaScript?",
-        "Can you help me set up my JavaScript environment?",
-        "I'm new to JavaScript. How do I get started?",
-        "Where should I begin with JavaScript setup?",
-        "What steps are involved in setting up JavaScript?",
-        "How can I configure my environment for JavaScript development?",
-        "What are the prerequisites for setting up JavaScript?",
-        "Do you have a beginner's guide to setting up JavaScript?",
-        "How do I install JavaScript on my computer?"
-      ],
-      "responses": [
-        "Setting up a JavaScript development environment is essential for web development. You'll need a code editor like Visual Studio Code, a web browser for testing, and Node.js for running JavaScript outside of the browser. Follow our step-by-step guide within the app or its web version to get started.",
-        "To set up JavaScript for web development, you'll need a code editor such as Visual Studio Code or Atom, a web browser like Google Chrome or Mozilla Firefox, and Node.js for running JavaScript on your machine. Check out our tutorials within the app or its web version for detailed setup instructions.",
-        "Setting up your JavaScript environment involves installing a code editor, configuring your browser, and setting up Node.js for server-side JavaScript development. Our tutorials within the app or its web version provide detailed instructions to help you through the process.",
-        "If you're new to JavaScript, getting started is easy! Install a code editor, set up a local server environment with Node.js, and start coding. Our tutorials within the app or its web version will guide you through each step of the setup process.",
-        "To begin with JavaScript setup, make sure you have a code editor installed on your computer. Then, follow our comprehensive tutorials within the app or its web version for detailed instructions on setting up your development environment.",
-        "The setup process for JavaScript involves installing a code editor, configuring your development environment, and setting up any necessary tools like Node.js and package managers. Our tutorials within the app or its web version will walk you through each step.",
-        "Configuring your environment for JavaScript development typically includes installing a code editor, setting up version control with Git, and installing Node.js for server-side development. Explore our tutorials within the app or its web version for detailed setup instructions.",
-        "Before setting up JavaScript, ensure you have a code editor installed on your system. Then, follow our beginner-friendly tutorials within the app or its web version to install additional tools like Node.js and configure your environment for development.",
-        "New to JavaScript? No problem! Our beginner's guide will walk you through the setup process step by step. Install a code editor, set up a local development server, and start coding with our tutorials within the app or its web version.",
-        "To install JavaScript on your computer, you'll need a code editor, a web browser, and Node.js for server-side development. Follow our setup guide within the app or its web version for detailed instructions on getting started."
-      ]
-    },     
-    {
-      "tag": "updates",
-      "patterns": [
-        "How often do you release updates?",
-        "Are there any updates available for JavaScript Quickstart?",
-        "Do you provide regular updates?",
-        "When was the last update released?",
-        "Can I get information about the latest updates?",
-        "Tell me about the update schedule for JavaScript Quickstart"
-      ],
-      "responses": [
-        "We strive to release updates regularly to enhance the functionality and performance of JavaScript Quickstart. You can check for updates on our website or follow us on social media for announcements.",
-        "Yes, we provide regular updates for JavaScript Quickstart to ensure that our users have the best experience. Stay tuned for announcements regarding updates.",
-        "You can expect regular updates for JavaScript Quickstart to improve its features and address any issues. Keep an eye on our website or social media channels for update announcements."
-      ]
-    },
-    {
-      "tag": "compatibility",
-      "patterns": [
-        "Is JavaScript Quickstart compatible with mobile devices?",
-        "Can I use JavaScript Quickstart on my smartphone?",
-        "Does JavaScript Quickstart support mobile platforms?",
-        "Is there a mobile version of JavaScript Quickstart?",
-        "I want to access JavaScript Quickstart on my mobile device. Is it possible?",
-        "Can I use JavaScript Quickstart on a tablet?",
-        "I prefer using my smartphone for learning. Is JavaScript Quickstart mobile-friendly?"
-      ],
-      "responses": [
-        "Yes, JavaScript Quickstart is designed to be compatible with mobile devices. You can access it on your smartphone or tablet without any issues.",
-        "JavaScript Quickstart fully supports mobile platforms, allowing you to use it on your smartphone or tablet for convenience.",
-        "You can use JavaScript Quickstart on your mobile device without any compatibility issues. It's optimized for mobile browsing."
-      ]
-    },
-    {
-      "tag": "how_to_use",
-      "patterns": [
-        "How do I use this app?",
-        "What are the steps to utilize this app?",
-        "Can you guide me on how to make the most of this app?",
-        "I'm new to this app, how do I get started?",
-        "What is the best way to navigate through this app?"
-      ],
-      "responses": [
-        "To make the most of this app, start by exploring the various features and functionalities available. You can begin by creating an account or logging in if you already have one. Then, familiarize yourself with the interface and navigation options. Don't hesitate to explore different sections and settings to customize your experience.",
-        "Using this app is easy! Begin by signing up or logging in to your account. Once logged in, you can explore the different sections and features available. Take your time to understand how each feature works and how it can benefit you. Remember, if you have any questions or need assistance, you can always refer and ask questions to me or contact the developer.",
-        "Getting started with this app is simple! Just sign up or log in to access the various features and resources available. Whether you're looking for tutorials, exercises or quizzes, this app has something for everyone. Feel free to explore within the app and dont forget to give feedaback on the web version of this app in the form section."
-      ]
-    },   
-    {
-      "tag": "app_purpose",
-      "patterns": [
-        "What is this app all about?",
-        "Can you tell me about the purpose of this app?",
-        "What does this app do?",
-        "What is the main function of this app?",
-        "How can this app help me?",
-        "What are the features of this app?",
-        "Why should I use this app?",
-        "What sets this app apart from others?"
-      ],
-      "responses": [
-        "This app is designed to provide quick and comprehensive assistance with JavaScript. Whether you're a beginner or an experienced developer, you can find resources, tutorials, and support to enhance your JavaScript skills.",
-        "The main purpose of this app is to serve as a JavaScript learning and assistance tool. You can access tutorials, guides, and a supportive community to improve your JavaScript proficiency.",
-        "This app offers a range of features to support your JavaScript learning journey. From tutorials and documentation to personalized assistance and updates, it's your go-to resource for all things JavaScript.",
-        "The primary function of this app is to help users learn and master JavaScript. It provides resources, tutorials, and support to aid in understanding and applying JavaScript concepts.",
-        "By using this app, you can access a wealth of JavaScript resources, tutorials, and guidance to enhance your skills and knowledge. Whether you're a beginner or an expert, there's something here for everyone.",
-        "This app stands out for its comprehensive collection of JavaScript resources, user-friendly interface, and personalized assistance. It's designed to support learners at every stage of their JavaScript journey.",
-        "You should use this app if you're looking to learn JavaScript or improve your existing skills. With its diverse range of features and supportive community, it's an invaluable tool for JavaScript enthusiasts.",
-        "What sets this app apart is its focus on providing accessible and practical support for JavaScript learners. Whether you're looking for tutorials, documentation, or assistance, this app has you covered."
-      ]
-    },   
-    {
-      "tag": "web_version",
-      "patterns": [
-        "Is there a web version of JavaScript Quickstart?",
-        "Can I access JavaScript Quickstart on the web?",
-        "Do you have a website for JavaScript Quickstart?",
-        "Is JavaScript Quickstart available online?",
-        "Where can I find JavaScript Quickstart on the internet?",
-        "I prefer using web applications. Is there a browser-based version of JavaScript Quickstart?"
-      ],
-      "responses": [
-        "Yes, JavaScript Quickstart is available as a web application. You can access it online at https://javascript-quickstart.vercel.app",
-        "JavaScript Quickstart has a web version that you can access online. Visit https://javascript-quickstart.vercel.app to explore it.",
-        "You can find JavaScript Quickstart on the web at https://javascript-quickstart.vercel.app. It offers the same features and resources as the mobile app."
-      ]
-    },
-    {
-      "tag": "features",
-      "patterns": [
-        "What features does JavaScript Quickstart offer?",
-        "Can you tell me about the features of JavaScript Quickstart?",
-        "What functionalities are available in JavaScript Quickstart?",
-        "Does JavaScript Quickstart have any special features?",
-        "How is JavaScript Quickstart different from other learning platforms?",
-        "I'm interested in the capabilities of JavaScript Quickstart"
-      ],
-      "responses": [
-        "JavaScript Quickstart offers a wide range of features to support your learning journey, including tutorials, documentation, code samples, and interactive exercises. Explore the app to discover its full potential!",
-        "With JavaScript Quickstart, you have access to various features such as tutorials, documentation, code playgrounds, and community support. Our goal is to provide a comprehensive learning experience for JavaScript enthusiasts.",
-        "JavaScript Quickstart is packed with features designed to help you learn and master JavaScript, including interactive tutorials, documentation, code examples, and more. Dive in and explore the app to see how it can benefit you."
-      ]
-    },
-    {
-      "tag": "community",
-      "patterns": [
-        "Is there a community around JavaScript Quickstart?",
-        "Do you have a forum or community for JavaScript Quickstart users?",
-        "Can I join a community of JavaScript Quickstart enthusiasts?",
-        "How can I connect with other JavaScript Quickstart users?",
-        "Is there a support group or forum for JavaScript Quickstart?",
-        "I want to engage with other developers using JavaScript Quickstart"
-      ],
-      "responses": [
-        "Yes, we have a community of JavaScript Quickstart users where you can connect, share knowledge, and seek help. Join our forum at the Community Resources Page to become a part of it!",
-        "JavaScript Quickstart has a vibrant community of developers who are passionate about JavaScript. You can join our forum at the Community Resources Page to connect with fellow learners and experts.",
-        "Connect with other JavaScript Quickstart users, ask questions, and share your knowledge in our community forum at the Community Resources Page. It's a great place to learn and grow together!"
-      ]
-    },
-    {
-      "tag": "feedback",
-      "patterns": [
-        "How can I provide feedback on JavaScript Quickstart?",
-        "Do you welcome feedback?",
-        "Can I share my thoughts about JavaScript Quickstart?",
-        "Is there a way to give feedback on JavaScript Quickstart?",
-        "I have some feedback about JavaScript Quickstart. Where should I send it?",
-        "I want to offer feedback on my experience with JavaScript Quickstart"
-      ],
-      "responses": [
-        "We value your feedback! Feel free to share your thoughts, suggestions, or any issues you encounter with JavaScript Quickstart. You can send us an email at berdejojomar@gmail.com or reach out through our website contact form.",
-        "Your feedback is important to us! Please don't hesitate to share your thoughts, suggestions, or concerns about JavaScript Quickstart. You can reach us via email at berdejojomar@gmail.com or through our website contact form.",
-        "We appreciate your feedback! Let us know your thoughts, suggestions, or any issues you encounter while using JavaScript Quickstart. You can contact us via email at berdejojomar@gmail.com or through our website contact form."
-      ]
-    },
-    {
-      "tag": "platforms",
-      "patterns": [
-        "On which platforms is JavaScript Quickstart available?",
-        "Is JavaScript Quickstart compatible with all devices?",
-        "Can I use JavaScript Quickstart on my smartphone?",
-        "Does JavaScript Quickstart support multiple platforms?",
-        "Can I access JavaScript Quickstart on my tablet?",
-        "I prefer using different devices. Is JavaScript Quickstart available on all platforms?"
-      ],
-      "responses": [
-        "JavaScript Quickstart is designed to be accessible across various platforms, including smartphones, tablets, and computers. You can use it on any device with internet access.",
-        "Yes, JavaScript Quickstart is compatible with multiple platforms, allowing you to access it from smartphones, tablets, and computers.",
-        "You can use JavaScript Quickstart on a wide range of devices, including smartphones, tablets, and computers. It's optimized for different screen sizes and platforms."
-      ]
-    },
-    {
-      "tag": "about",
-      "patterns": [
-        "Can you tell me about JavaScript Quickstart?",
-        "What is JavaScript Quickstart?",
-        "What does JavaScript Quickstart offer?",
-        "How does JavaScript Quickstart work?",
-        "I want to know more about JavaScript Quickstart"
-      ],
-      "responses": [
-        "JavaScript Quickstart is an interactive learning platform designed to help you master JavaScript. Whether you're a beginner or an experienced developer, you'll find tutorials, documentation, code samples, and more to enhance your skills.",
-        "JavaScript Quickstart is a comprehensive learning resource for JavaScript enthusiasts. It offers tutorials, documentation, code playgrounds, and a supportive community to help you learn and grow as a developer.",
-        "JavaScript Quickstart provides everything you need to learn and master JavaScript, including tutorials, documentation, code examples, and interactive exercises. It's designed to support your learning journey and help you become proficient in JavaScript."
-      ]
-    }
-  ]
-}
+      {
+        "tag": "about_andam",
+        "patterns": ["about ANDAM", "what is ANDAM", "how to use ANDAM", "ANDAM app info", "tell me about ANDAM"],
+        "responses": [
+          "ANDAM is an app designed to help report emergencies and access important contact information for various agencies, as well as resources for the safety of the community in Carigara, Leyte.",
+          "Here are some guidelines on how to use the app effectively:\n1. Select the relevant agency from the dropdown menu.\n2. Your name and contact number are collected automatically and stored securely for future use.\n3. Check your location on the map before reporting to ensure accuracy. If the location is not accurate, include the location of the incident in the report details.\n4. Fill in the report details, including the nature of the emergency and any additional information required.\n5. Ensure location services are enabled on your device for accurate reporting. It's recommended to turn on location services before using the app.\n6. An active internet connection is required to submit reports through the app. If you do not have internet access, please call the selected agency directly using the provided number below.\n7. Once you've filled in all the necessary information, tap the 'Submit Report' button.\n8. Confirm your submission when prompted."
+        ]
+      },
+      {
+        "tag": "how_to_use",
+        "patterns": ["how to use the app", "how to report emergencies", "reporting process", "using ANDAM app"],
+        "responses": [
+          "Here are some steps on how to use the app effectively:\n1. Select the relevant agency from the dropdown menu.\n2. Your name and contact number are collected automatically and stored securely for future use.\n3. Check your location on the map before reporting to ensure accuracy. If the location is not accurate, include the location of the incident in the report details.\n4. Fill in the report details, including the nature of the emergency and any additional information required.\n5. Ensure location services are enabled on your device for accurate reporting. It's recommended to turn on location services before using the app.\n6. An active internet connection is required to submit reports through the app. If you do not have internet access, please call the selected agency directly using the provided number below.\n7. Once you've filled in all the necessary information, tap the 'Submit Report' button.\n8. Confirm your submission when prompted."
+        ]
+      },
+      {
+        "tag": "navigation",
+        "patterns": ["how to navigate the app", "app navigation", "finding my way around the app"],
+        "responses": [
+          "Here are some tips for navigating the app:\n- Use the dropdown menu to switch between different agencies.\n- Input fields are provided for report details. Your name, contact number, current location, current date and time are automatically filled when reporting.\n- The 'Submit Report' button is located at the bottom of the screen."
+        ]
+      },
+      {
+        "tag": "considerations",
+        "patterns": ["things to consider", "what to keep in mind", "important considerations", "ANDAM app considerations"],
+        "responses": [
+          "Here are some things to consider:\n- Make sure to provide accurate information in your report to ensure timely response from the concerned authorities.\n- If location service is on, your current location is automatically collected when you submit a report to provide accurate information to authorities. Rest assured that your privacy is our priority, and this location data is used solely for the purpose of your report.\n- If the location appears inaccurate, it may be due to factors such as slow internet connection or other environmental conditions. In such cases, please manually input the location of the incident in the report details to ensure accurate reporting.\n- If something goes wrong during the reporting process or while obtaining location, try restarting the app or refetch your location in the maps page for a smoother experience."
+        ]
+      },
+      {
+        "tag": "contact_info",
+        "patterns": ["contact information", "emergency contact", "agency contact", "contact details", "agency details"],
+        "responses": [
+          "For emergency contact information and agency contacts, please refer to the dropdown menu within the app."
+        ]
+      },
+      {
+        "tag": "internet_connection",
+        "patterns": ["no internet access", "internet connection issues", "offline reporting", "reporting without internet"],
+        "responses": [
+          "If you do not have internet access, you can still report emergencies by calling the selected agency directly using the provided number within the app."
+        ]
+      },
+      {
+        "tag": "privacy",
+        "patterns": ["privacy concerns", "location data usage", "data privacy", "privacy policy"],
+        "responses": [
+          "Your privacy is our priority. Location data collected is used solely for the purpose of your report and is stored securely."
+        ]
+      },
+      {
+        "tag": "report_submission",
+        "patterns": ["submitting report", "how to submit report", "report confirmation", "confirming report submission"],
+        "responses": [
+          "Once you've filled in all the necessary information, tap the 'Submit Report' button and confirm your submission when prompted."
+        ]
+      },
+      {
+        "tag": "location_accuracy",
+        "patterns": ["accuracy of location", "inaccurate location", "location not correct", "location accuracy issue"],
+        "responses": [
+          "If the location appears inaccurate, please manually input the location of the incident in the report details to ensure accurate reporting."
+        ]
+      },
+      {
+        "tag": "reporting_issues",
+        "patterns": ["reporting problems", "issues with reporting", "reporting errors", "reporting glitches"],
+        "responses": [
+          "If something goes wrong during the reporting process, try restarting the app or refetching your location for a smoother experience."
+        ]
+      },
+      {
+        "tag": "bye",
+        "patterns": ["bye", "goodbye", "see you later", "farewell", "take care"],
+        "responses": ["Goodbye! Have a great day!"]
+      },
+      {
+        "tag": "okay",
+        "patterns": ["okay", "alright", "got it", "understood", "I understand", "sounds good", "fine"],
+        "responses": ["Great! If you have any more questions, feel free to ask."]
+      },
+      {
+        "tag": "sorry",
+        "patterns": ["sorry", "apologies", "my apologies", "I'm sorry", "forgive me", "excuse me"],
+        "responses": ["No problem at all! If you need any assistance, just let me know."]
+      }
+    ]
+  }
+  
